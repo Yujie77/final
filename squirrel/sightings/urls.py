@@ -3,6 +3,7 @@ from django.urls import path
 from . import views
 
 urlpatterns = [
+    path('stats/',views.stats_squirrel),
     path('add/',views.add_squirrel),
     path('<str:squirrel_id>/',views.edit_squirrel),
     path('', views.all_squirrels),

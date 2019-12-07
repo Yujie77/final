@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 from .forms import SquirrelForm
-
+from django.shortcuts import redirect
 from .models import squirrel
 
 def all_squirrels(request):
@@ -44,6 +44,13 @@ def edit_squirrel(request, squirrel_id):
     }
 
     return render(request, 'sightings/edit.html', context)
+
+def stats_squirrel(request):
+    squirrels = squirrel.objects.all()
+    context = {
+        'squirrels': squirrels,
+    }
+    return render(request, 'sightings/stats.html', context)
 #def index(request):
    # return HttpResponse("Hello, world. You're at the polls index.")
 
