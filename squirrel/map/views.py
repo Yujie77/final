@@ -4,6 +4,7 @@ from django.http import HttpResponse
 from django.views.generic import TemplateView
 
 from sightings.models import squirrel
+import random
 
 class Home(TemplateView):
     template_name = 'template.html'
@@ -12,10 +13,12 @@ class Home(TemplateView):
     #return render(request,'map/template.html')
 
 def all_squirrels(request):
+    squirrels = squirrel.objects.all()
+    squirrelsample = random.choices(squirrels, k=40)
     #squirrels = squirrel.objects.all()
-    squirrels = squirrel.objects.all()[0:10]
+    #squirrels = squirrel.objects.all()[0:10]
     context = {
-        'squirrels': squirrels,
+        'squirrels': squirrelsample,
     }
     return render(request, 'map/template.html', context)
 
