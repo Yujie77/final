@@ -7,7 +7,7 @@ class squirrel(models.Model):
     longitude = models.FloatField()
     uniqueid = models.CharField(max_length=150)
     shift = models.CharField(max_length=150,blank=True)
-    Date = models.IntegerField(blank=True)
+    Date = models.CharField(max_length=150,blank=True)
     Age = models.CharField(max_length=150,blank=True)
     furcolor = models.CharField(max_length=150,blank=True)
     location = models.CharField(max_length=150,blank=True)
