@@ -26,4 +26,6 @@ http://tools-lt.appspot.com/sightings/stats
 
 http://tools-lt.appspot.com/map
 
-
+## 5. Very very important
+1. After deployment, the database becomes read only which means that you could see the view of edit and add but you could not click the submit button to change the data.
+2. The squirrel id should be unique. However, in the database, some squirrel ids are the same (eg. "37E-PM-1006-03"). For these ids, you could not click the link of "http://tools-lt.appspot.com/sightings/<uniqueid>" Because one id related to two rows of data. If you want to get rid of this problem, you need to clean the data before importing.
