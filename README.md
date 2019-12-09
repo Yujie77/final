@@ -8,7 +8,7 @@ When you click the unique link for each squirrel, you could update a particular 
 It also have a single link to the “add” sighting view which allows you to create a new sighting. (Fields supported are as follows:
 Latitude, Longitude, Unique Squirrel ID, Shift, Date, Age, Primary Fur Color, Location, Specific Location, Running, Chasing,
  Climbing, Eating, Foraging, Other Activities, Kuks, Quaas, Moans, Tail flags, Tail twitches, Approaches, Indifferent, Runs from)
-Finally, there is a general stats about the sightings.
+Finally, there is a general stats about the sightings. We pick five attributes and summary the statistics (including running, chasing, climbing, eating and foraging).
 
 For the application of maps, it will show a map that displays the location of the squirrel sightings on an OpenStreets map.
 
@@ -20,6 +20,10 @@ Project Group 83, Section 2
 UNIs: [lt2765, yh3207]
 
 ## 4. Project link
-http://35.225.36.110/sightings/
+http://tools-lt.appspot.com/sightings
 
-http://35.225.36.110/maps/
+http://tools-lt.appspot.com/stats
+
+http://tools-lt.appspot.com/map
+
+
