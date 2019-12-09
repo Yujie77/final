@@ -22,7 +22,7 @@ UNIs: [lt2765, yh3207]
 ## 4. Project link
 http://tools-lt.appspot.com/sightings
 
-http://tools-lt.appspot.com/stats
+http://tools-lt.appspot.com/sightings/stats
 
 http://tools-lt.appspot.com/map
 
