@@ -47,10 +47,44 @@ def edit_squirrel(request, squirrel_id):
 
 def stats_squirrel(request):
     squirrels = squirrel.objects.all()
+    runningtrue=0
+    runningfalse=0
+    chasingtrue=0
+    chasingfalse=0
+    climbingtrue=0
+    climbingfalse=0
+    eatingtrue=0
+    eatingfalse=0
+    foragingtrue=0
+    foragingfalse=0
+    for x in squirrels:
+        if x.running == 'true':
+            runningtrue+=1
+        if x.running == 'false':
+            runningfalse+=1
+        if x.chasing == 'true':
+            chasingtrue+=1
+        if x.chasing == 'false':
+            chasingfalse+=1
+        if x.climbing == 'true':
+            climbingtrue+=1
+        if x.climbing == 'false':
+            climbingfalse+=1
+        if x.eating == 'true':
+            eatingtrue+=1
+        if x.eating == 'false':
+            eatingfalse+=1
+        if x.foraging == 'true':
+            foragingtrue+=1
+        if x.foraging == 'false':
+            foragingfalse+=1
+    squirreldict={'runningtrue':runningtrue,'runningfalse':runningfalse,'chasingtrue':chasingtrue,'chasingfalse':chasingfalse,'climbingtrue':climbingtrue,'climbingfalse':climbingfalse,'eatingtrue':eatingtrue,'eatingfalse':eatingfalse,'foragingtrue':foragingtrue,'foragingfalse':foragingfalse}
+
     context = {
-        'squirrels': squirrels,
+        'squirrels': squirreldict,
     }
     return render(request, 'sightings/stats.html', context)
+
 #def index(request):
    # return HttpResponse("Hello, world. You're at the polls index.")
 
