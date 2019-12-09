@@ -10,7 +10,7 @@ Latitude, Longitude, Unique Squirrel ID, Shift, Date, Age, Primary Fur Color, Lo
  Climbing, Eating, Foraging, Other Activities, Kuks, Quaas, Moans, Tail flags, Tail twitches, Approaches, Indifferent, Runs from)
 Finally, there is a general stats about the sightings. We pick five attributes and summary the statistics (including running, chasing, climbing, eating and foraging).
 
-For the application of maps, it will show a map that displays the location of the squirrel sightings on an OpenStreets map.
+For the application of maps, it shows a map that displays the location of the squirrel sightings on an OpenStreets map.
 
 
 ## 2. Group name 
